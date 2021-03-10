@@ -1,0 +1,957 @@
+/* Changement de police */
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../Font/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
+  src: url("../Font/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+  font-family: Raleway;
+  color: black;
+  width: 100%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Header avec menu de navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 30px 20px 30px;
+}
+
+#logo-header {
+  width: 75px;
+  height: 35px;
+}
+
+#nav-browser {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  font-size: 14px;
+  margin-left: 500px;
+}
+
+nav li {
+  width: 120px;
+  text-align: center;
+}
+
+.nav-link {
+  width: 120px;
+}
+
+.nav-link:hover {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+  padding-top: 30px;
+}
+
+#register {
+  color: #0065fc;
+  font-weight: bold;
+}
+
+/* Titre et sous titre du site */
+
+#site-title {
+  font-size: 17px;
+  margin: 0 30px 5px 30px;
+}
+
+#subtitle {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 30px 15px 30px;
+}
+
+/* Moteur de recherche par villes */
+
+#search-engine {
+  display: flex;
+  margin: 0 30px 10px 30px;
+}
+
+#icon-localisation {
+  display: flex;
+  background-color: #f2f2f2;
+  width: 40px;
+  height: 35px;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 0 0 10px;
+}
+
+#search-field {
+  font-weight: bold;
+  box-shadow: 0px 1px 0px 0px #f2f2f2, 0px -1px 0px 0px #f2f2f2;
+  border: transparent;
+  height: 35px;
+  width: 200px;
+  padding: 10px;
+}
+
+#search-field::placeholder {
+  color: black;
+  font-size: 13px;
+  font-weight: bold;
+  opacity: 1;
+}
+
+#button-browser {
+  background-color: #0065fc;
+  color: white;
+  height: 35px;
+  width: 100px;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+#button-mobile {
+  display: none;
+}
+
+/* Filtres de recherche */
+
+#filter {
+  display: flex;
+  align-items: center;
+  margin: 0 30px 0 30px;
+}
+
+#filter p {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0 10px 0 0;
+}
+
+.search-filter {
+  display: flex;
+  margin: 15px 0px 10px 0px;
+  align-items: center;
+}
+
+.search-filter button {
+  background-color: white;
+  height: 35px;
+  padding: 0 15px 0 20px;
+  font-weight: 600;
+  font-size: 13px;
+  border: 2px solid #f2f2f2;
+  border-left: none;
+  border-radius: 0px 30px 30px 0px;
+}
+
+.search-filter button:hover {
+  background-color: #deebff;
+}
+
+.search-filter i {
+  display: flex;
+  position: relative;
+  left: 13px;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  color: #0065fc;
+  background-color: #deebff;
+  padding: 7px;
+  border-radius: 50%;
+}
+
+/* Logements disponibles dans la ville */
+
+#icon-info {
+  color: #0065fc;
+  border: solid #f2f2f2 2px;
+  font-size: 8px;
+  padding: 3px;
+  text-align: center;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+}
+
+#accommodation-available {
+  display: flex;
+  align-items: center;
+  margin: 0 30px 10px 30px;
+}
+
+#accommodation-available p {
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+/* Titres de section */
+
+.section-title {
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px;
+  margin: 15px 0 10px 15px;
+}
+
+/* Hébergements à Marseille */
+
+#accommodation-global {
+  display: flex;
+  margin: 0 30px 0 30px;
+}
+
+#accommodation-marseille {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  width: 70%;
+  height: 420px;
+  border-radius: 15px;
+  align-items: center;
+}
+
+#list-accommodation-marseille {
+  display: flex;
+  flex-wrap: wrap;
+  height: 320px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 20px;
+  margin: 0 0px;
+}
+
+#accommodation-marseille img {
+  width: 94%;
+  height: 75px;
+  border-radius: 15px 15px 0 0;
+  padding: 3%;
+  object-fit: cover;
+}
+
+.accommodation {
+  margin: 0 10px;
+  border-radius: 15px;
+  background-color: white;
+  justify-content: center;
+  width: 29%;
+  height: 140px;
+  line-height: 7px;
+  box-shadow: 0px 0px 0px 2px #f2f2f2;
+}
+
+.accommodation-name {
+  font-size: 11px;
+  font-weight: 800;
+  margin: 5px 0 0px 15px;
+  line-height: 10px;
+}
+
+.accommodation-price {
+  font-size: 9px;
+  margin: 10px 0 5px 15px;
+}
+
+.price-bold {
+  font-weight: bold;
+}
+
+.rating-marseille {
+  margin: 0 0 5px 15px;
+}
+
+.rating1 {
+  color: #0065fc;
+  font-size: 7px;
+  width: 5px;
+}
+
+.rating0 {
+  color: #f2f2f2;
+  font-size: 6px;
+}
+
+/* Bouton afficher plus */
+
+#show-more {
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  top: 15px;
+  right: 255px;
+ 
+}
+
+/* Hébergements populaires */
+
+#list-accommodation-popular {
+  margin-left: 30px;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  width: 30%;
+  height: 420px;
+  align-items: center;
+  justify-items: center;
+}
+
+#section-title-popular {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px 0 15px;
+  margin: 5px 0 10px 0;
+}
+
+#title-popular {
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.accommodation1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px 20px 20px 20px;
+  border-radius: 15px;
+  background-color: white;
+  width: 85%;
+  height: 100px;
+  line-height: 7px;
+}
+
+#list-accommodation-popular img {
+  height: 95px;
+  width: 90px;
+  padding: 3%;
+  object-fit: cover;
+  border-radius: 15px 0 0 15px;
+}
+
+.text-popular {
+  display: flex;
+  flex-flow: wrap column;
+  width: 50%;
+  padding: 5% 0 0 2%;
+}
+
+.rating-popular {
+  padding: 0 0 0 15px;
+  margin: 20px 0 0 0;
+}
+
+/* Activités à Marseille */
+
+#activity-title {
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 20px 0 15px 0;
+  padding: 15px 0 0 0;
+}
+
+#activity-marseille {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 0px 35px 30px;
+}
+
+#activity-marseille > div {
+  border-radius: 15px;
+  margin: 0 29px 0 0;
+}
+
+#activity-marseille img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+#activity-marseille p {
+  font-size: 11px;
+  font-weight: bold;
+  padding: 0 0 0 10px;
+}
+
+.activity-single {
+  box-shadow: 0px 0px 0px 2px #f2f2f2;
+  width: 22%;
+}
+
+.activity-single img {
+  height: 275px;
+  border-radius: 15px 15px 0 0;
+}
+
+.activity-double {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  width: 22%;
+}
+
+#activity-fort {
+  width: 100%;
+  margin: 0 0 20px 0;
+  box-shadow: 0px 0px 0px 2px #f2f2f2;
+  border-radius: 15px;
+}
+
+#activity-fort img {
+  height: 140px;
+}
+
+#activity-frioul {
+  width: 100%;
+  margin: 0 0 0 0;
+  border-radius: 15px;
+  box-shadow: 0px 0px 0px 2px #f2f2f2;
+}
+
+#activity-frioul img {
+  height: 75px;
+}
+
+#activity-garde {
+  width: 100%;
+  margin: 0 0 20px 0;
+  border-radius: 15px;
+  box-shadow: 0px 0px 0px 2px #f2f2f2;
+}
+
+#activity-garde img {
+  height: 95px;
+}
+
+#activity-longchamp {
+  width: 100%;
+  box-shadow: 0px 0px 0px 2px #f2f2f2;
+  border-radius: 15px;
+}
+
+#activity-longchamp img {
+  height: 120px;
+}
+
+/* Pied de page */
+
+footer {
+  display: flex;
+  background-color: #f2f2f2;
+  font-size: 11px;
+  width: 100%;
+}
+
+footer div {
+  margin: 0px 80px 0 0;
+  height: 130px;
+  padding: 15px 0 0 30px;
+  width: 30%;
+}
+
+.footer-links h2 {
+  font-size: 12px;
+}
+
+.footer-links {
+  margin: 0px 50px 0 0;
+  line-height: 21px;
+}
+
+/* Media Queries Téléphone */
+
+@media only screen and (max-width: 666px) {
+  body {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 398px; 
+  }
+
+  /* Header et menu de navigation */
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    margin: 10px 0;
+    
+  }
+
+  header a {
+    order: 2;
+  }
+
+  #nav-browser {
+    order: 3;
+    width: 100%;
+    margin: 15px 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  #logo-header {
+    margin: 0 0 0 30px;
+    height: 35px;
+    width: 75px;
+  }
+
+  #register {
+    font-size: 16px;
+    margin: 0 30px;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  nav li {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-link {
+    display: block;
+    border-bottom: 3px solid #f2f2f2;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .nav-link:active {
+    border-top: none;
+    padding-top: 0;
+    color: #0065fc;
+    border-bottom: 2px solid #0065fc;
+    font-size: 15px;
+  }
+
+  #site-title {
+    font-size: 18px;
+    margin: 0 30px 10px 30px;
+  }
+
+  #subtitle {
+    font-size: 12px;
+  }
+
+  /* Moteur de recherche */
+
+  #search-engine {
+    justify-content: center;
+    width: 100%;
+  }
+
+  #icon-localisation {
+    height: 45px;
+    width: 40px;
+    font-size: 14px;
+  }
+
+  #search-field {
+    height: 45px;
+    width: 70%;
+    padding: 10px;
+  }
+
+  #search-field::placeholder {
+    font-size: 13px;
+  }
+
+  #button-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0065fc;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    width: 45px;
+  }
+
+  #button-browser {
+    display: none;
+  }
+
+  /* Filtres */
+
+  #filter {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 30px 0 15px;
+  }
+
+  #filter p {
+    width: 100%;
+    margin: 10px 30px 10px 15px;
+    font-size: 14px;
+  }
+
+  .search-filter {
+    margin: 0 10px 5px 0px;
+  }
+
+  .search-filter button {
+    font-size: 13px;
+  }
+
+  #button-pet {
+    width: 180px;
+  }
+
+  /* Logements disponibles */
+
+  #accommodation-available p {
+    font-size: 14px;
+  }
+
+  #accommodation-available i {
+    margin-right: 15px;
+  }
+
+  /* Hébergements populaires */
+
+  #accommodation-global {
+    display: flex;
+    flex-flow: wrap-reverse;
+    width: 100%;
+    margin: 0;
+  }
+
+  #list-accommodation-popular {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  #section-title-popular {
+    display: flex;
+    margin: 0 5px;
+    align-items: center;
+  }
+
+  .accommodation1 {
+    width: 89%;
+    margin: 10px 20px;
+  }
+
+  #list-accommodation-popular img {
+    width: 110px;
+    padding: 2%;
+  }
+
+  .text-popular {
+    padding: 10px 0 0 10px;
+  }
+
+  /* Hébergements à Marseille */
+
+  .section-title {
+    margin: 25px 10px;
+    padding: 0;
+  }
+
+  #accommodation-marseille {
+    width: 100%;
+    height: 1215px;
+    display: block;
+    flex-wrap: wrap;
+    background-color: white;
+    margin: 0 20px;
+  }
+
+  .accommodation {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    height: 170px;
+    box-shadow: -1px 1px 5px 3px #f2f2f2;
+  }
+
+  #accommodation-marseille img {
+    height: 100px;
+    padding: 2%;
+    width: 96%;
+  }
+
+  #show-more {
+    position: relative;
+    top: 815px;
+    margin: 0 10px;
+    font-size: 12px;
+  }
+
+  /* Activités à Marseille  */
+
+  #activity-marseille {
+    margin: 0 30px 30px 30px;
+  }
+
+  #activity-title {
+    padding: 20px 0 0 0;
+  }
+
+  #activity-marseille div {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  #activity-marseille > .activity-double > .activity-mobile {
+    margin: 10px 0;
+  }
+
+  .activity-mobile img {
+    height: 85px;
+  }
+
+  #activity-fort {
+    box-shadow: 0px 0px 0px 2px #f2f2f2;
+    border-radius: 15px;
+  }
+
+  #activity-fort img {
+    height: 85px;
+  }
+
+  #activity-frioul {
+    border-radius: 15px;
+    box-shadow: 0px 0px 0px 2px #f2f2f2;
+  }
+
+  #activity-frioul img {
+    height: 85px;
+  }
+
+  #activity-garde {
+    border-radius: 15px;
+    box-shadow: 0px 0px 0px 2px #f2f2f2;
+  }
+
+  #activity-garde img {
+    height: 85px;
+  }
+
+  #activity-longchamp {
+    margin: 0 0 0 0;
+    box-shadow: 0px 0px 0px 2px #f2f2f2;
+    border-radius: 15px;
+  }
+
+  #activity-longchamp img {
+    height: 85px;
+  }
+
+  /* Footer */
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-links {
+    width: 100%;
+    padding-bottom: 20px;
+    height: auto;
+  }
+}
+
+/* Media queries tablettes portrait */
+
+@media only screen and (min-width: 667px) and (max-width: 1023px){
+  body {
+    width: 100%;
+    max-width: 860px;
+    margin: auto;
+  }
+
+  /* Menu de navigation */
+
+  nav ul {
+    margin: 0 0 0 40%;
+  }
+
+  #nav-browser {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Liste des hébergements populaires */
+
+  #accommodation-global {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  #list-accommodation-popular {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 0 25px 0;
+    height: 180px;
+    justify-content: center;
+  }
+
+  #section-title-popular {
+    width: 100%;
+    height: 20px;
+    margin: 10px 0 0 0;
+    padding: 0px 20px;
+  }
+
+  .accommodation1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 5px;
+  }
+
+  .text-popular {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 5% 0 0 0;
+    line-height: 11px;
+    margin: 0;
+  }
+
+  .accommodation-name {
+    font-size: 9px;
+  }
+
+  .rating-popular {
+    padding: 15px 0 10px 15px;
+    margin: 0;
+  }
+
+  /* Hébergements à Marseille */
+
+  #accommodation-marseille {
+    width: 100%;
+  }
+
+  .accommodation {
+    width: 30%;
+  }
+
+  #show-more {
+    padding-left: 5px;
+  }
+
+  /* Liste des activités */
+
+  #activity-title {
+    padding-left: 30px;
+  }
+
+  #activity-marseille {
+    width: 94%;
+  }
+
+  #activity-marseille > div {
+    width: 31%;
+    margin: 0 16px 0 0;
+  }
+
+  #activity-marseille > .activity-double-tablet {
+    display: flex;
+    flex-flow: row;
+    width: 106%;
+    margin: 15px 0 0 0;
+  }
+
+  #activity-marseille > .activity-double > .activity-tablet {
+    margin: 0 15px 0 0;
+  }
+
+  #activity-marseille > .activity-double > .activity-tablet img {
+    height: 120px;
+  }
+}
+
+/* Media query tablettes */
+@media only screen and (min-width: 667px) and (max-width: 771px){
+
+  #list-accommodation-popular img {
+    height: 95px;
+    width: 65px;
+    padding: 3%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .accommodation1 {
+    width: 190px;
+  }
+
+  #list-accommodation-popular {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  #section-title-popular {
+    display: flex;
+    margin: 0 5px;
+    align-items: center;
+  }
+
+  .text-popular {
+    width: 110px;
+  }
+  
+  /* Liste des activités */
+
+   #activity-marseille > div {
+    width: 46%;
+    margin: 0 16px 15px 0;
+  }
+
+   #activity-marseille > .activity-double-tablet {
+    display: flex;
+    flex-flow: column;
+    width: 46%;
+    margin: 0px 0 0 0;
+  }
+
+  #activity-marseille > .activity-double > .activity-tablet  {
+    margin-bottom: 15px ;
+  }
+
+  #activity-marseille > .activity-double > .activity-tablet img {
+    height: 110px;
+  }
+}
+
+@media (min-width: 1030px) {
+
+  #activity-marseille > div {
+    width: 23%;
+    margin: 0 20px 15px 0;
+  }
+}
+
